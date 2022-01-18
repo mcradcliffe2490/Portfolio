@@ -12,7 +12,6 @@ export default function CloudInfraImg(props) {
       id="svg675"
       xmlns="http://www.w3.org/1999/xlink"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <defs id="defs679" />
       <g id="g575">

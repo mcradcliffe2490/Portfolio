@@ -12,7 +12,6 @@ function FeelingProud(props) {
       data-name="Layer 1"
       id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <defs id="defs18020" />
       <path
@@ -434,7 +433,6 @@ function FeelingProud(props) {
             d="M135.7,326.9l-1,27.8c0,0,55.2-2.9,87.4-33.8s2.2-37,2.2-37s-10.2-0.6-10.2,1.3          C214.2,287,191.9,319.9,135.7,326.9z"
             fill={theme.imageClothes}
           />
-          //image clothes /&gt;
         </g>
         <g id="g226">
           <path
@@ -449,7 +447,6 @@ function FeelingProud(props) {
             d="M130.9,361c0.9-0.2-1.6-23.3-1.6-23.3s-68.3-5.1-98.3-45.6h0c-1.5-2.9-6.7-5.8-9.3-3.9l-2.3,1          c-8.7,6.3-7.5,19.3-1.7,28.4c3.1,4.8,7.6,10.1,14.3,15.3C53.4,349.5,88.8,368.7,130.9,361z"
             fill={theme.imageClothes}
           />
-          //image clothes /&gt;
         </g>
         <g id="g234" opacity="0.1">
           <polygon
