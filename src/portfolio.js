@@ -332,10 +332,10 @@ const contactPageData = {
       "responding within 2-3 days",
   },
   blogSection: {
-    title: "Blogs",
+    title: "Blog",
     subtitle:
-      "I just started blogging more recently. I like to write, so I'll probably" +
-      " blog a lot about the things I'm interested in like tech, media, and theology",
+      "I just started writing articles recently. I enjoy writing, so I plan to post a few times a month." +
+      " I write about the things I'm interested in like tech, media, and theology",
     link: "https://medium.com/@werty2490",
     avatar_image_path: "blogs_image.svg",
   },
