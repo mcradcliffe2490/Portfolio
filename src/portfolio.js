@@ -121,6 +121,7 @@ const skills = {
         "Experience with Firebase Authentication and Firestore",
         "Experience with computer hardware, built several computers for myself",
         "Familiar with Linux, MacOS, and Windows",
+        "Maintain a blog on a variety of things I enjoy talking about",
       ],
       softwareSkills: [
         {
@@ -331,11 +332,11 @@ const contactPageData = {
       "responding within 2-3 days",
   },
   blogSection: {
-    title: "Blogs",
+    title: "Blog",
     subtitle:
-      "I don't currently have anything on my blog, but I plan to start blogging soon. I like to write, so I'll probably" +
-      " blog a lot about the things I'm interested in like tech, media, and theology",
-    link: "https://medium.com/@mcradcliffe2490",
+      "I just started writing articles recently. I enjoy writing, so I plan to post a few times a month." +
+      " I write about the things I'm interested in like tech, media, and theology",
+    link: "https://medium.com/@werty2490",
     avatar_image_path: "blogs_image.svg",
   },
 };
