@@ -13,8 +13,7 @@ const greeting = {
   title2: "Mycale",
   logo_name: "My Portfolio",
   full_name: "Mycale C. Radcliffe",
-  subTitle:
-    "A new college grad developer looking to experiment and find what sticks.",
+  subTitle: "A junior developer looking to experiment and find what sticks.",
   resumeLink:
     "https://docs.google.com/document/d/1ebL1p8ao6_fdgb2vLGTBXuRfP4nyRCDi6xIF7LCEvj8/edit?usp=sharing",
   mail: "mailto:mcradcliffe2490@gmail.com",
@@ -38,7 +37,8 @@ const skills = {
       skills: [
         "Building responsive website front end using ReactJS",
         "Some experience creating application backend in Node and Express",
-        "Currently employed by Captech Consulting",
+        "Lift and shift AngularJS application to Angular 13",
+        "Currently employed at Captech Consulting",
       ],
       softwareSkills: [
         {
@@ -64,6 +64,14 @@ const skills = {
           },
         },
         {
+          skillName: "Angular",
+          fontAwesomeClassname: "simple-icons:angular",
+          style: {
+            backgroundColor: "#FFFFFF",
+            color: "#CB3837",
+          },
+        },
+        {
           skillName: "ReactJS",
           fontAwesomeClassname: "simple-icons:react",
           style: {
@@ -71,24 +79,10 @@ const skills = {
           },
         },
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
           skillName: "NPM",
           fontAwesomeClassname: "simple-icons:npm",
           style: {
             color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#f89820",
           },
         },
         {
@@ -167,8 +161,7 @@ const degrees = {
       alt_name: "NCAT",
       duration: "2018 - 2022",
       descriptions: [
-        "I'm currently finishing the last semester for my Bachelors in Computer Science.",
-        "Here are some of the classes I've taken: ",
+        "Here are some of the classes I took: ",
         "Data Structures | " +
           "Algorithms | " +
           "Programming Languages | " +
@@ -238,6 +231,19 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
+          title: "Developer Consultant",
+          company: "Captech",
+          company_url: "https://www.captechconsulting.com/",
+          logo_path: "captech.jpg",
+          duration: "August 2022 - present",
+          location: "Tysons, VA/Remote",
+          description:
+            "(Project 1) Worked closely with client to help rewrite a section of their banking web application from AngularJS to Angular 13. " +
+            "This project made heavy use of Angular FormGroups, Jasmine for testing, and the devextreme library for base components like input boxes. " +
+            "(Project 2) Working with global logistics client on their mobile app, focused mainly on adding missing automated testing functionality, QA work, and documentation for the team",
+          color: "#ee3c26",
+        },
+        {
           title: "STEP Intern",
           company: "Google",
           company_url: "https://careers.google.com/",
@@ -247,10 +253,10 @@ const experience = {
           description:
             "(2019) Added full stack functionality for an aspect of a new internal web tool for the DialogFlow team " +
             "which will allow for direct access to look at and manipulate user data via the web tool instead of " +
-            "manually querying the database.\n" +
-            "(2020) Worked on several personal projects that used vanilla Javascript, HTML, CSS, and Java Servlets\n" +
+            "manually querying the database. " +
+            "(2020) Worked on several personal projects that used vanilla Javascript, HTML, CSS, and Java Servlets " +
             "Worked on a project with two other interns where we began building a web application for helping college " +
-            "students find housing, where I specifically worked on User Authentication (see github for the code)\n",
+            "students find housing, where I specifically worked on User Authentication (see github for the code) ",
           color: "#ee3c26",
         },
         {
@@ -326,7 +332,7 @@ const projectsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "M_profile_pic.jpeg",
+    profile_image_path: "profile.png",
     description:
       "You can contact me at any of the links below. Email is the best way to contact me and I'm usually good about " +
       "responding within 2-3 days",
@@ -406,6 +412,50 @@ const projects = {
           iconifyClass: "logos:c-plusplus",
         },
       ],
+    },
+    {
+      id: "4",
+      name: "Stock trades based on reddit trends",
+      url: "https://github.com/mcradcliffe2490/money-maker",
+      description:
+        "Based on Fireship youtube channel project, scrapes titles from r/wallstreetbets subreddit and gives the data to openai api to decide what stocks to buy" +
+        " on alpaca(I used paper money)",
+      languages: [
+        {
+          name: "javascript",
+          iconifyClass: "logos:javascript",
+        },
+        {
+          name: "firebase",
+          iconifyClass: "logos:firebase",
+        },
+      ],
+    },
+    {
+      id: "5",
+      name: "Navi",
+      url: "https://github.com/mcradcliffe2490/Navi",
+      description:
+        "WORK IN PROGRESS! Website for taking a users gaming preferences and transforming them into PC part recommendations to meet those preferences",
+      languages: [
+        {
+          name: "Svelte",
+          iconifyClass: "logos:svelte",
+        },
+        {
+          name: "chatgpt",
+          iconifyClass: "logos:openai",
+        },
+      ],
+    },
+    {
+      id: "6",
+      name: "Punchers Past",
+      url: "https://github.com/mcradcliffe2490/Punchers-Past",
+      description:
+        "Fighting game created in the M.U.G.E.N engine based on historical characters. 3D models are original, as are the move sets and animations for the characters." +
+        " This was a group project, my work was on mapping character move sets with the character models created by teammates and writing the scripts for gameplay physics",
+      languages: [],
     },
   ],
 };
