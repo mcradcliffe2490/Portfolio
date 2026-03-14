@@ -11,7 +11,6 @@ export default function ExperienceImg(props) {
       viewBox="0 0 1094 760"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <defs id="defs123" />
       <title id="title2" />
