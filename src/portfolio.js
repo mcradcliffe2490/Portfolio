@@ -429,7 +429,7 @@ const freelanceFormData = {
   subtitle:
     "Looking for a freelance front-end developer? I build modern, responsive websites and web applications. " +
     "Fill out the form below and I'll get back to you within a few days.",
-  formspreeEndpoint: "https://formspree.io/f/YOUR_FORM_ID",
+  formspreeEndpoint: "https://formspree.io/f/mlgplykd",
   projectTypes: ["Website", "Web App", "Consultation", "Other"],
   budgetRanges: [
     "Under $1,000",
