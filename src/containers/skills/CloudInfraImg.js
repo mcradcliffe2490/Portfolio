@@ -10,7 +10,7 @@ export default function CloudInfraImg(props) {
       preserveAspectRatio="none"
       version="1.1"
       id="svg675"
-      xmlns="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs id="defs679" />

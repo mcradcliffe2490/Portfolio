@@ -10,7 +10,6 @@ export default function FullStackImg(props) {
       viewBox="0 0 1076.06371 755.2279"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <defs id="defs93" />
       <path
