@@ -5,7 +5,11 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import BlogsImg from "./BlogsImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
+import {
+  greeting,
+  contactPageData,
+  freelanceFormData,
+} from "../../portfolio.js";
 import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;
@@ -76,6 +80,121 @@ function Contact(props) {
             </div>
             <div className="blog-heading-img-div">
               <BlogsImg theme={theme} />
+            </div>
+          </div>
+        </Fade>
+        <Fade bottom duration={1000} distance="40px">
+          <div className="freelance-heading-div">
+            <div className="freelance-form-div">
+              <h1
+                className="freelance-heading-text"
+                style={{ color: theme.text }}
+              >
+                {freelanceFormData.title}
+              </h1>
+              <p
+                className="freelance-header-detail-text subTitle"
+                style={{ color: theme.secondaryText }}
+              >
+                {freelanceFormData.subtitle}
+              </p>
+              <form
+                action={freelanceFormData.formspreeEndpoint}
+                method="POST"
+                className="freelance-form"
+              >
+                <input
+                  type="text"
+                  name="_gotcha"
+                  style={{ display: "none" }}
+                  tabIndex="-1"
+                  autoComplete="off"
+                />
+                <div className="form-group">
+                  <label style={{ color: theme.text }}>Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Your name"
+                    style={{
+                      backgroundColor: theme.projectCard,
+                      color: theme.text,
+                      borderColor: theme.secondaryText,
+                    }}
+                  />
+                </div>
+                <div className="form-group">
+                  <label style={{ color: theme.text }}>Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="your@email.com"
+                    style={{
+                      backgroundColor: theme.projectCard,
+                      color: theme.text,
+                      borderColor: theme.secondaryText,
+                    }}
+                  />
+                </div>
+                <div className="form-group">
+                  <label style={{ color: theme.text }}>Project Type</label>
+                  <select
+                    name="projectType"
+                    required
+                    style={{
+                      backgroundColor: theme.projectCard,
+                      color: theme.text,
+                      borderColor: theme.secondaryText,
+                    }}
+                  >
+                    <option value="">Select a project type</option>
+                    {freelanceFormData.projectTypes.map((type) => (
+                      <option key={type} value={type}>
+                        {type}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label style={{ color: theme.text }}>Budget Range</label>
+                  <select
+                    name="budgetRange"
+                    style={{
+                      backgroundColor: theme.projectCard,
+                      color: theme.text,
+                      borderColor: theme.secondaryText,
+                    }}
+                  >
+                    <option value="">Select a budget range</option>
+                    {freelanceFormData.budgetRanges.map((range) => (
+                      <option key={range} value={range}>
+                        {range}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label style={{ color: theme.text }}>
+                    Project Description
+                  </label>
+                  <textarea
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Tell me about your project..."
+                    style={{
+                      backgroundColor: theme.projectCard,
+                      color: theme.text,
+                      borderColor: theme.secondaryText,
+                    }}
+                  />
+                </div>
+                <button type="submit" {...styles} className="general-btn">
+                  Send Inquiry
+                </button>
+              </form>
             </div>
           </div>
         </Fade>

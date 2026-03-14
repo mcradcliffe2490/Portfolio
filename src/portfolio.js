@@ -13,7 +13,8 @@ const greeting = {
   title2: "Mycale",
   logo_name: "My Portfolio",
   full_name: "Mycale C. Radcliffe",
-  subTitle: "A junior developer looking to experiment and find what sticks.",
+  subTitle:
+    "An experienced front-end developer specializing in React, Svelte, and modern web frameworks.",
   resumeLink:
     "https://docs.google.com/document/d/1ebL1p8ao6_fdgb2vLGTBXuRfP4nyRCDi6xIF7LCEvj8/edit?usp=sharing",
   mail: "mailto:mcradcliffe2490@gmail.com",
@@ -32,13 +33,13 @@ const socialMediaLinks = {
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
+      title: "Front-End Development",
       fileName: "FullStackImg",
       skills: [
-        "Building responsive website front end using ReactJS",
-        "Some experience creating application backend in Node and Express",
-        "Lift and shift AngularJS application to Angular 13",
-        "Currently employed at Captech Consulting",
+        "Building responsive, production-grade front ends using React, Svelte, Angular, and Vue",
+        "Migrating legacy applications to modern frameworks (AngularJS to React/Angular)",
+        "Integrating AI APIs and prompt engineering for intelligent user experiences",
+        "Currently consulting at Captech on enterprise-level front-end projects",
       ],
       softwareSkills: [
         {
@@ -64,6 +65,20 @@ const skills = {
           },
         },
         {
+          skillName: "ReactJS",
+          fontAwesomeClassname: "simple-icons:react",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
+          skillName: "Svelte",
+          fontAwesomeClassname: "logos:svelte-icon",
+          style: {
+            color: "#FF3E00",
+          },
+        },
+        {
           skillName: "Angular",
           fontAwesomeClassname: "simple-icons:angular",
           style: {
@@ -72,10 +87,17 @@ const skills = {
           },
         },
         {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
+          skillName: "Vue",
+          fontAwesomeClassname: "logos:vue",
           style: {
-            color: "#61DAFB",
+            color: "#4FC08D",
+          },
+        },
+        {
+          skillName: "Redux",
+          fontAwesomeClassname: "logos:redux",
+          style: {
+            color: "#764ABC",
           },
         },
         {
@@ -93,29 +115,22 @@ const skills = {
           },
         },
         {
-          skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
+          skillName: "Figma",
+          fontAwesomeClassname: "logos:figma",
           style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:python",
-          style: {
-            color: "#3776AB",
+            color: "#F24E1E",
           },
         },
       ],
     },
     {
-      title: "Other Related Skills",
+      title: "Other Skills & Tools",
       fileName: "CloudInfraImg",
       skills: [
-        "Experience with Firebase Authentication and Firestore",
-        "Experience with computer hardware, built several computers for myself",
-        "Familiar with Linux, MacOS, and Windows",
-        "Maintain a blog on a variety of things I enjoy talking about",
+        "Prompt engineering and AI API integration (ChatGPT, GitHub Copilot)",
+        "XML/JSON processing and data transformation pipelines",
+        "UX design collaboration with Figma and app design principles",
+        "Technical writing, documentation, and maintaining a blog",
       ],
       softwareSkills: [
         {
@@ -126,10 +141,10 @@ const skills = {
           },
         },
         {
-          skillName: "PCnBuilding",
-          fontAwesomeClassname: "simple-icons:pcgamingwiki",
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:python",
           style: {
-            color: "#7d63ff",
+            color: "#3776AB",
           },
         },
         {
@@ -221,26 +236,87 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Extracurriculars",
+  subtitle: "Work Experience, Internships, and Extracurriculars",
   description:
-    "I've completed several internships and worked on a few small projects for school and on the side. The details " +
-    "of my experiences will be layed out here.",
+    "I have several years of professional consulting experience delivering front-end solutions " +
+    "for Fortune 500 clients, along with internships at top tech companies. Here are the details.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work Experience",
       experiences: [
         {
-          title: "Developer Consultant",
-          company: "Captech",
+          title: "Front End Developer",
+          company: "Captech Consulting",
           company_url: "https://www.captechconsulting.com/",
           logo_path: "captech.jpg",
-          duration: "August 2022 - present",
+          duration: "March 2025 - Present",
+          location: "Remote",
+          description:
+            "Fortune 500 Mutual Insurance & Financial Services client. " +
+            "Migrating legacy AngularJS application to React 15 class components while implementing updated UX designs from Figma mockups. " +
+            "Orchestrating complex application state management using Redux across multiple user workflows and data processing pipelines. " +
+            "Implementing comprehensive unit testing suite for Redux action creators, improving code reliability and deployment confidence. " +
+            "Leveraging AI-assisted development tools (GitHub Copilot) to accelerate refactoring processes and improve code review practices. " +
+            "Technologies: AngularJS to React 15 Migration, Redux, Semantic UI React, Unit Testing, AI-Assisted Development.",
+          color: "#ee3c26",
+        },
+        {
+          title: "Frontend Developer",
+          company: "Captech Consulting",
+          company_url: "https://www.captechconsulting.com/",
+          logo_path: "captech.jpg",
+          duration: "May 2024 - February 2025",
+          location: "Remote",
+          description:
+            "AI-Powered BPMN Chart Generator. " +
+            "Served as sole frontend developer for an innovative AI-driven business process modeling application using Svelte 4. " +
+            "Integrated ChatGPT API responses with bpmn.js library to dynamically render interactive BPMN diagrams from user prompts. " +
+            "Developed comprehensive user interface including real-time chat, file upload/download, and seamless component interactions. " +
+            "Collaborated with UX designer to implement responsive design system using shadcn component library. " +
+            "Researched and implemented improved prompt engineering methodology, introducing two-stage JSON-to-XML conversion for enhanced output accuracy. " +
+            "Technologies: Svelte 4, bpmn.js, shadcn, ChatGPT API Integration, Prompt Engineering, XML/JSON Processing.",
+          color: "#ee3c26",
+        },
+        {
+          title: "Front-End Developer",
+          company: "Captech Consulting",
+          company_url: "https://www.captechconsulting.com/",
+          logo_path: "captech.jpg",
+          duration: "August 2024 - December 2024",
+          location: "Remote",
+          description:
+            "Fortune 500 Financial Services Company. " +
+            "Gave substantial input for the redesign and implementation of a complex form-based component, leveraging React Context for state management and integrating with existing REST APIs. " +
+            "Engineered the component architecture to support real-time data editing while ensuring seamless data persistence. " +
+            "Updated multiple components to work with package updates to ag-Grid and proprietary libraries, ensuring compatibility while preserving business logic. " +
+            "Participated in a cloud infrastructure migration initiative, working with BogieFiles to facilitate the transfer of AWS resources.",
+          color: "#ee3c26",
+        },
+        {
+          title: "QA Tester",
+          company: "Captech Consulting",
+          company_url: "https://www.captechconsulting.com/",
+          logo_path: "captech.jpg",
+          duration: "May 2023 - May 2024",
+          location: "Remote",
+          description:
+            "Leading Provider of Specialty Logistics Services. " +
+            "Planned, wrote, and executed test cases used in testing a driver logistics app in active development. " +
+            "Wrote several test scripts in Appium with the goal of fully automating common tests for the mobile application.",
+          color: "#ee3c26",
+        },
+        {
+          title: "Front-End Developer",
+          company: "Captech Consulting",
+          company_url: "https://www.captechconsulting.com/",
+          logo_path: "captech.jpg",
+          duration: "October 2022 - April 2023",
           location: "Tysons, VA/Remote",
           description:
-            "(Project 1) Worked closely with client to help rewrite a section of their banking web application from AngularJS to Angular 13. " +
-            "This project made heavy use of Angular FormGroups, Jasmine for testing, and the devextreme library for base components like input boxes. " +
-            "(Project 2) Working with global logistics client on their mobile app, focused mainly on adding missing automated testing functionality, QA work, and documentation for the team",
+            "Fortune 500 Leading Provider of Investment and Business Solutions. " +
+            "Worked closely with client to help rewrite a section of their web application from AngularJS to Angular 13. " +
+            "This project made heavy use of Angular FormGroups, Jasmine for testing, and the devextreme library for base components.",
           color: "#ee3c26",
         },
         {
@@ -254,13 +330,13 @@ const experience = {
             "(2019) Added full stack functionality for an aspect of a new internal web tool for the DialogFlow team " +
             "which will allow for direct access to look at and manipulate user data via the web tool instead of " +
             "manually querying the database. " +
-            "(2020) Worked on several personal projects that used vanilla Javascript, HTML, CSS, and Java Servlets " +
+            "(2020) Worked on several personal projects that used vanilla Javascript, HTML, CSS, and Java Servlets. " +
             "Worked on a project with two other interns where we began building a web application for helping college " +
-            "students find housing, where I specifically worked on User Authentication (see github for the code) ",
+            "students find housing, where I specifically worked on User Authentication.",
           color: "#ee3c26",
         },
         {
-          title: " Front End Intern",
+          title: "Front End Intern",
           company: "IBM",
           company_url: "https://www.ibm.com/us-en?ar=1",
           logo_path: "IBM_logo.jpg",
@@ -268,10 +344,10 @@ const experience = {
           location: "Remote",
           description:
             "Developed an internal tool to increase productivity by comparing two maintained files against " +
-            "an excel specs sheet to find differences and produce a file documenting these differences\n" +
+            "an excel specs sheet to find differences and produce a file documenting these differences. " +
             "Developed an internal web tool using Node.js that reads xml files given by the product engineering team " +
             "and produces a webpage that has the xml data organized into tables and functions that can be copied " +
-            "instead of manually coding them\n",
+            "instead of manually coding them.",
           color: "#0071C5",
         },
         {
@@ -280,11 +356,11 @@ const experience = {
           company_url:
             "https://www.ncat.edu/provost/undergraduate-research.php",
           logo_path: "NCAT_research.png",
-          duration: "Aug 2020 - Present",
+          duration: "Aug 2020 - May 2022",
           location: "Greensboro, NC",
           description:
-            "Worked in research on detecting sybils on twitter and helped write a " +
-            "survey paper on quantum machine learning (will attach a link when it's published)",
+            "Worked in research on detecting sybils on Twitter and helped write a " +
+            "survey paper on quantum machine learning.",
           color: "#ffc601",
         },
       ],
@@ -335,20 +411,56 @@ const contactPageData = {
     profile_image_path: "profile.png",
     description:
       "You can contact me at any of the links below. Email is the best way to contact me and I'm usually good about " +
-      "responding within 2-3 days",
+      "responding within 2-3 days. I'm also available for freelance front-end development work.",
   },
   blogSection: {
     title: "Blog",
     subtitle:
-      "I just started writing articles recently. I enjoy writing, so I plan to post a few times a month." +
-      " I write about the things I'm interested in like tech, media, and theology",
+      "I enjoy writing, so I post from time to time." +
+      " I write about the things I'm interested in like tech, media, and theology.",
     link: "https://medium.com/@werty2490",
     avatar_image_path: "blogs_image.svg",
   },
 };
 
+// Freelance Form Config
+const freelanceFormData = {
+  title: "Hire Me",
+  subtitle:
+    "Looking for a freelance front-end developer? I build modern, responsive websites and web applications. " +
+    "Fill out the form below and I'll get back to you within a few days.",
+  formspreeEndpoint: "https://formspree.io/f/mlgplykd",
+  projectTypes: ["Website", "Web App", "Consultation", "Other"],
+  budgetRanges: [
+    "Under $1,000",
+    "$1,000 - $5,000",
+    "$5,000 - $10,000",
+    "$10,000+",
+    "Let's Discuss",
+  ],
+};
+
 const projects = {
   data: [
+    {
+      id: "7",
+      name: "AI-Powered BPMN Chart Generator",
+      url: "#",
+      description:
+        "Built as sole frontend developer using Svelte 4 for an AI-driven business process modeling app. " +
+        "Integrates ChatGPT API with bpmn.js to dynamically render interactive BPMN diagrams from natural language prompts. " +
+        "Features real-time chat, file upload/download, shadcn design system, and a two-stage JSON-to-XML conversion pipeline.",
+      languages: [
+        {
+          name: "Svelte",
+          iconifyClass: "logos:svelte",
+        },
+        {
+          name: "ChatGPT API",
+          iconifyClass: "logos:openai",
+        },
+      ],
+    },
     {
       id: "0",
       name: "College Roomate Finder",
@@ -470,5 +582,6 @@ export {
   experience,
   projectsHeader,
   contactPageData,
+  freelanceFormData,
   projects,
 };
