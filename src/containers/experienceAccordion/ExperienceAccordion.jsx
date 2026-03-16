@@ -1,5 +1,5 @@
 import React from "react";
-import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
+import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import "./ExperienceAccordion.css";
 import { Accordion, Panel } from "baseui/accordion";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";

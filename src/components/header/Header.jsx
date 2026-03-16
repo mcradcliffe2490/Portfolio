@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
-import { CgSun } from "react-icons/cg/";
+import { CgSun } from "react-icons/cg";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 
@@ -63,7 +63,7 @@ function Header(props) {
     );
 
   return (
-    <Fade top duration={1000} distance="20px">
+    <Fade direction="down" duration={1000}>
       <div>
         <header className="header">
           <NavLink to={link} tag={Link} className="logo">

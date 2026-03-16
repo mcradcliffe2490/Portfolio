@@ -1,8 +1,8 @@
 import React from "react";
 import "./Educations.css";
-import DegreeCard from "../../components/degreeCard/DegreeCard.js";
+import DegreeCard from "../../components/degreeCard/DegreeCard";
 import { degrees } from "../../portfolio";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function Educations(props) {
   const theme = props.theme;
@@ -10,7 +10,7 @@ function Educations(props) {
   return (
     <div className="main" id="educations">
       <div className="educations-header-div">
-        <Fade bottom duration={2000} distance="20px">
+        <Fade direction="up" duration={2000}>
           <h1 className="educations-header" style={{ color: theme.text }}>
             Degrees Received
           </h1>

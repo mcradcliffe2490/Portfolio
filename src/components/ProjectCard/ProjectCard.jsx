@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { style } from "glamor";
 
 export default function ProjectCard({ repo, theme }) {
@@ -26,7 +26,7 @@ export default function ProjectCard({ repo, theme }) {
 
   return (
     <div>
-      <Fade bottom duration={2000} distance="40px">
+      <Fade direction="up" duration={2000}>
         <div
           {...styles}
           key={repo.id}

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
@@ -22,7 +22,7 @@ function Projects(props) {
     <div className="projects-main">
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-projects">
-        <Fade bottom duration={2000} distance="40px">
+        <Fade direction="up" duration={2000}>
           <div className="projects-heading-div">
             <div className="projects-heading-img-div">
               <ProjectsImg theme={theme} />

@@ -5,7 +5,7 @@ import Educations from "../../containers/education/Educations";
 import Certifications from "../../containers/certifications/Certifications";
 import EducationImg from "./EducationImg";
 import "./EducationComponent.css";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 function Education(props) {
   const theme = props.theme;
@@ -13,7 +13,7 @@ function Education(props) {
     <div className="education-main">
       <Header theme={props.theme} setTheme={props.setTheme} />
       <div className="basic-education">
-        <Fade bottom duration={2000} distance="40px">
+        <Fade direction="up" duration={2000}>
           <div className="heading-div">
             <div className="heading-img-div">
               <EducationImg theme={theme} />

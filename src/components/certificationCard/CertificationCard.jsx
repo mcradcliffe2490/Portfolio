@@ -1,6 +1,6 @@
 import React from "react";
 import "./CertificationCard.css";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { style } from "glamor";
 
 function CertificationCard(props) {
@@ -15,7 +15,7 @@ function CertificationCard(props) {
   });
 
   return (
-    <Fade bottom duration={2000} distance="20px">
+    <Fade direction="up" duration={2000}>
       <div className="cert-card" {...styles}>
         <div className="content">
           <a

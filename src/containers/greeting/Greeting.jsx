@@ -2,14 +2,14 @@ import React from "react";
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
-import { Fade } from "react-reveal";
-import { useHistory } from "react-router-dom";
+import { Fade } from "react-awesome-reveal";
+import { useNavigate } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 
 export default function Greeting(props) {
   const theme = props.theme;
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const styles = style({
     backgroundColor: `${theme.accentBright}`,
@@ -19,7 +19,7 @@ export default function Greeting(props) {
   });
 
   return (
-    <Fade bottom duration={2000} distance="40px">
+    <Fade direction="up" duration={2000}>
       <div className="greet-main" id="greeting">
         <div className="greeting-main">
           <div className="greeting-text-div">
@@ -41,7 +41,7 @@ export default function Greeting(props) {
                   {...styles}
                   className="button"
                   onClick={() => {
-                    history.push("/contact");
+                    navigate("/contact");
                   }}
                 >
                   About Me/Blog

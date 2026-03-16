@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion.js";
+import ExperienceAccordion from "../../containers/experienceAccordion/ExperienceAccordion";
 import "./Experience.css";
 import { experience } from "../../portfolio.js";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import ExperienceImg from "./ExperienceImg";
 
 function Experience(props) {
@@ -14,7 +14,7 @@ function Experience(props) {
     <div className="experience-main">
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-experience">
-        <Fade bottom duration={2000} distance="40px">
+        <Fade direction="up" duration={2000}>
           <div className="experience-heading-div">
             <div className="experience-heading-img-div">
               <ExperienceImg theme={theme} />

@@ -1,6 +1,6 @@
 import React from "react";
 import "./DegreeCard.css";
-import { Fade, Flip } from "react-reveal";
+import { Fade, Flip } from "react-awesome-reveal";
 import { style } from "glamor";
 
 function DegreeCard(props) {
@@ -69,7 +69,7 @@ function DegreeCard(props) {
 
   return (
     <div className="degree-card">
-      <Flip left duration={2000}>
+      <Flip direction="horizontal" duration={2000}>
         <div {...style_img}>
           <img
             style={{
@@ -82,7 +82,7 @@ function DegreeCard(props) {
           />
         </div>
       </Flip>
-      <Fade right duration={2000} distance="40px">
+      <Fade direction="right" duration={2000}>
         <div {...card_body}>
           <div
             className="body-header"

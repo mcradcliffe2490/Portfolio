@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import BlogsImg from "./BlogsImg";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import "./ContactComponent.css";
 import {
   greeting,
@@ -29,12 +29,14 @@ function Contact(props) {
     <div className="contact-main">
       <Header theme={theme} setTheme={props.setTheme} />
       <div className="basic-contact">
-        <Fade bottom duration={1000} distance="40px">
+        <Fade direction="up" duration={1000}>
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
               <img
                 className="profile-pic"
-                src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
+                src={require(
+                  `../../assests/images/${ContactData["profile_image_path"]}`,
+                )}
                 alt=""
               />
             </div>
@@ -60,7 +62,7 @@ function Contact(props) {
             </div>
           </div>
         </Fade>
-        <Fade bottom duration={1000} distance="40px">
+        <Fade direction="up" duration={1000}>
           <div className="blog-heading-div">
             <div className="blog-heading-text-div">
               <h1 className="blog-heading-text" style={{ color: theme.text }}>
@@ -83,7 +85,7 @@ function Contact(props) {
             </div>
           </div>
         </Fade>
-        <Fade bottom duration={1000} distance="40px">
+        <Fade direction="up" duration={1000}>
           <div className="freelance-heading-div">
             <div className="freelance-form-div">
               <h1
