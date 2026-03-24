@@ -8,7 +8,7 @@ export const greeting = {
 	subTitle:
 		'An experienced front-end developer specializing in React, Svelte, and modern web frameworks.',
 	resumeLink:
-		'https://docs.google.com/document/d/1ebL1p8ao6_fdgb2vLGTBXuRfP4nyRCDi6xIF7LCEvj8/edit?usp=sharing',
+		'https://drive.google.com/file/d/1UOZRrfWrXvRVuRXi7zeNeNcvS25I5PCd/view?usp=sharing',
 	mail: 'mailto:mcradcliffe2490@gmail.com'
 };
 
@@ -320,8 +320,8 @@ export const contactPageData = {
 	blogSection: {
 		title: 'Blog',
 		subtitle:
-			'I enjoy writing, so I post from time to time. I write about the things I\'m interested in like tech, media, and theology.',
-		link: 'https://medium.com/@werty2490'
+			'I enjoy writing, so I post from time to time. I write about the things I\'m interested in like tech, culture, and theology.',
+		link: 'https://substack.com/@mcradcliffe'
 	}
 };
 

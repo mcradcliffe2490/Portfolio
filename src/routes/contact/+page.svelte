@@ -52,7 +52,7 @@
 						rel="noopener noreferrer"
 						class="blog-link"
 					>
-						Read on Medium →
+						Read on Substack →
 					</a>
 				</div>
 				<div class="blog-illustration">
