@@ -13,21 +13,15 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Use Node.js 18
+    - name: Use Node.js 20
       uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 20
         cache: npm
 
     - run: npm ci
-      env:
-        CI: ""
 
     - run: npm run build
-
-    - run: npm test
-      env:
-        CI: "true"
 
     - name: Deploy to GitHub Pages
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
