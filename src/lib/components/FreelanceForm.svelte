@@ -2,6 +2,18 @@
 	import { freelanceFormData } from '$lib/data/portfolio';
 
 	let submitted = $state(false);
+
+	async function handleSubmit(event: SubmitEvent) {
+		event.preventDefault();
+		const form = event.target as HTMLFormElement;
+		const data = new FormData(form);
+		await fetch(freelanceFormData.formspreeEndpoint, {
+			method: 'POST',
+			body: data,
+			headers: { Accept: 'application/json' }
+		});
+		submitted = true;
+	}
 </script>
 
 <section class="freelance-form">
@@ -16,9 +28,7 @@
 		<form
 			action={freelanceFormData.formspreeEndpoint}
 			method="POST"
-			onsubmit={() => {
-				submitted = true;
-			}}
+			onsubmit={handleSubmit}
 		>
 			<input type="text" name="_gotcha" style="display:none" />
 
